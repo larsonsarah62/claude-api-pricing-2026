@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Claude API budget forecast-to-actual loop</title>
+  <desc id="desc">Four connected stages: count representative prompts, capture billable usage, reconcile reported cost, and rerun the budget when conditions change.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#071b35"/><stop offset="1" stop-color="#123d55"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#031326" flood-opacity=".28"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0l10 6-10 6z" fill="#75d4cf"/></marker>
+  </defs>
+  <rect width="1280" height="640" rx="28" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#b6d8e8"><path d="M0 80h1280M0 160h1280M0 240h1280M0 320h1280M0 400h1280M0 480h1280M0 560h1280"/><path d="M80 0v640M160 0v640M240 0v640M320 0v640M400 0v640M480 0v640M560 0v640M640 0v640M720 0v640M800 0v640M880 0v640M960 0v640M1040 0v640M1120 0v640M1200 0v640"/></g>
+  <text x="640" y="74" text-anchor="middle" fill="#fffaf0" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="750">TURN ESTIMATES INTO EVIDENCE</text>
+  <text x="640" y="112" text-anchor="middle" fill="#b7d7e4" font-family="Segoe UI,Arial,sans-serif" font-size="20">The monthly budget becomes useful when every assumption can be checked</text>
+  <g filter="url(#shadow)" font-family="Segoe UI,Arial,sans-serif">
+    <g transform="translate(50 178)">
+      <rect width="250" height="286" rx="22" fill="#fffaf0"/>
+      <circle cx="52" cy="55" r="25" fill="#68c8cc"/><text x="52" y="64" text-anchor="middle" fill="#092642" font-size="28" font-weight="800">1</text>
+      <text x="28" y="112" fill="#0b2945" font-size="25" font-weight="750">COUNT PROMPTS</text>
+      <text x="28" y="153" fill="#3d566b" font-size="18">Exact model</text><text x="28" y="183" fill="#3d566b" font-size="18">Prompt shape</text><text x="28" y="213" fill="#3d566b" font-size="18">Low / base / high</text>
+      <rect x="28" y="239" width="194" height="12" rx="6" fill="#d8e3e8"/><rect x="28" y="239" width="126" height="12" rx="6" fill="#68c8cc"/>
+    </g>
+    <g transform="translate(360 178)">
+      <rect width="250" height="286" rx="22" fill="#fffaf0"/>
+      <circle cx="52" cy="55" r="25" fill="#f08a72"/><text x="52" y="64" text-anchor="middle" fill="#092642" font-size="28" font-weight="800">2</text>
+      <text x="28" y="112" fill="#0b2945" font-size="25" font-weight="750">CAPTURE USAGE</text>
+      <text x="28" y="153" fill="#3d566b" font-size="18">Fresh input</text><text x="28" y="183" fill="#3d566b" font-size="18">Cache write / read</text><text x="28" y="213" fill="#3d566b" font-size="18">Output / batch / tools</text>
+      <g transform="translate(28 238)"><rect width="45" height="17" rx="8" fill="#68c8cc"/><rect x="53" width="65" height="17" rx="8" fill="#f08a72"/><rect x="126" width="31" height="17" rx="8" fill="#ecbb68"/><rect x="165" width="29" height="17" rx="8" fill="#6f9fd1"/></g>
+    </g>
+    <g transform="translate(670 178)">
+      <rect width="250" height="286" rx="22" fill="#fffaf0"/>
+      <circle cx="52" cy="55" r="25" fill="#ecbb68"/><text x="52" y="64" text-anchor="middle" fill="#092642" font-size="28" font-weight="800">3</text>
+      <text x="28" y="112" fill="#0b2945" font-size="25" font-weight="750">RECONCILE COST</text>
+      <text x="28" y="153" fill="#3d566b" font-size="18">Usage report</text><text x="28" y="183" fill="#3d566b" font-size="18">Cost report</text><text x="28" y="213" fill="#3d566b" font-size="18">Route and workspace</text>
+      <path d="M30 252l38-24 37 11 39-44 49 20" fill="none" stroke="#ec9b62" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(980 178)">
+      <rect width="250" height="286" rx="22" fill="#fffaf0"/>
+      <circle cx="52" cy="55" r="25" fill="#6f9fd1"/><text x="52" y="64" text-anchor="middle" fill="#092642" font-size="28" font-weight="800">4</text>
+      <text x="28" y="112" fill="#0b2945" font-size="25" font-weight="750">RERUN BUDGET</text>
+      <text x="28" y="153" fill="#3d566b" font-size="18">Model or route</text><text x="28" y="183" fill="#3d566b" font-size="18">Cache or batch mix</text><text x="28" y="213" fill="#3d566b" font-size="18">Price or workload</text>
+      <path d="M73 256a53 53 0 1 1 42-85" fill="none" stroke="#6f9fd1" stroke-width="10" stroke-linecap="round"/><path d="M107 161l24 2-11 22" fill="#6f9fd1"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#75d4cf" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"><path d="M306 321h43"/><path d="M616 321h43"/><path d="M926 321h43"/><path d="M1105 487c0 91-930 91-930 0"/></g>
+  <text x="640" y="590" text-anchor="middle" fill="#fffaf0" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="650">RERUN WHEN THE MODEL, PROMPT, CACHE, BATCH, ROUTE, PRICE, OR WORKLOAD CHANGES</text>
+</svg>
